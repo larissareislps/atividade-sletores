@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício CSS Seletores</title>
+    <style>
+        /* 1. Alterar a cor dos links */
+        a {
+            color: red;
+            text-decoration: none;
+        }a:hover {
+        color: lemon;
+    }
+
+    /* 2. Estilizar parágrafos */
+    p {
+        font-family: Arial, sans-serif;
+    }
+
+    h1 + p {
+        font-weight: bold;
+    }
+
+    /* 3. Estilizar a classe .destaque */
+    .destaque {
+        font-family: Arial, sans-serif;
+    }
+
+    .destaque p {
+        font-weight: bold;
+    }
+
+    .destaque strong {
+        color: red;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Título Principal</h1>
+    <p>Este é um parágrafo geral.</p>
+    <p>Este parágrafo vem logo após um h1.</p><a href="#">Este é um link</a>
+
+<div class="destaque">
+    <p>Este parágrafo está dentro de uma div com classe destaque.</p>
+    <strong>Este texto em negrito deve ficar vermelho.</strong>
+</div>
+
+</body>
+</html>
